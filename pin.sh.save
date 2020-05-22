@@ -1,0 +1,8 @@
+read -p "enter mail id:" input
+pattern="^[0-9a-z\._-][a-z]+\@[a-z]+\.[a-z]*$"
+
+if [[ $input =~ $pattern ]]
+then echo "valid"
+else echo "Invalid"
+fi
+
